@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Study with AI</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="blue">
+
+<header>
+  <h1>📚 Study with AI</h1>
+  <div>
+    <button id="themeBtn">🎨 Theme</button>
+    <span id="streak">🔥 0 ngày</span>
+  </div>
+</header>
+
+<h2>📊 Tiến độ học tập</h2>
+<canvas id="chart"></canvas>
+
+<div id="subjects"></div>
+
+<!-- Modal bài học -->
+<div id="lessonModal" class="hidden modal">
+  <div class="box">
+    <h2 id="modalTitle"></h2>
+    <div id="lessonList"></div>
+    <button id="closeLesson">Đóng</button>
+  </div>
+</div>
+
+<!-- Modal quiz -->
+<div id="quizModal" class="hidden modal">
+  <div class="box">
+    <h2 id="quizQ"></h2>
+    <div id="quizOps"></div>
+    <button id="submitQuiz">Nộp bài</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
